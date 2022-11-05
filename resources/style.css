@@ -96,6 +96,9 @@ header h2 {
 .header p {
     margin-top: auto;
 }
+.nerdy-fact {
+    background-color:hsla(0, 0%, 0%, 0.4);
+}
 /* 5. About section */
 .about-me {
     display: flex;
@@ -149,7 +152,7 @@ header h2 {
     padding-bottom: 1.5rem;
     opacity: 0.8;
 }
-.projects-container .button{
+.button {
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -160,13 +163,13 @@ header h2 {
     border-radius: 5px;
     box-shadow: 0px 2px;
 }
-.projects-container .button:hover{
-    color:#090f35;
+.button:hover {
+    color:#1a4359;
 }
-.projects-container .button:active{
+.button:active {
     margin-top: 5px;
-    background-color:hsla(232, 71, 12, 0.7);
-    border: 1px solid hsla(232, 71, 12, 0.7);
+    background-color:hsla(232, 71%, 12%, 0.7);
+    border: 1px solid hsla(232, 71%, 12%, 0.7);
     color: white;
     box-shadow: 0px 0px;
 }

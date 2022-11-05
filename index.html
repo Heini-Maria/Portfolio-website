@@ -23,7 +23,7 @@
                 <h1>Hi, I'm Heini-Maria.<br>I am a frontend developer.</h1>
                 <h2> ..with a marketing background.</h2>
             </div>
-            <p>Nerdy fact! It'se been
+            <p class="nerdy-fact">Nerdy fact! It'se been
                 <span id="time-container">0</span> hours since I started coding!
             </p>
         </div>
@@ -41,7 +41,7 @@
                 </p> 
             </div>   
             <div class="skills">
-                <img src="./resources/images/about_image.jpg" alt="Heini-Maria Kotipelto">
+                <img id="img1" src="./resources/images/about_image.jpg" onmouseover="changeImg1()" onmouseout="changeImg2()"alt="Heini-Maria Kotipelto">
                 <div class="skills-container">
                 <h3>Skills</h3>
                 <ul>
@@ -62,18 +62,18 @@
         <p>Here are some examples of projects I've done so far:</p>
         <div class="projects-container" role="presentation">
             <div>
-                <img src="./resources/images/websiteproject_dogfriendly.png" alt="website project visual">
+                <img id="img3" src="./resources/images/websiteproject_dogfriendly.png"  onmouseover="changeImg3()" onmouseout="changeImg4()" alt= "website project visual">
                 <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">A static website</a></h3>
                 <p>(for imaginary service)</p>
 
             </div>
             <div>
-                <img src="./resources/images/responsivewebsite.women.png" alt="responsive website project visual">
+                <img id="img5" src="./resources/images/responsivewebsite.women.png" onmouseover="changeImg5()" onmouseout="changeImg6()" alt="responsive website project visual">
                 <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">A resposive website</a></h3>
                 <p>(for imaginary club)</p>
             </div>
             <div>
-                <img src="./resources/images/cheatsheet.bash.png" alt="cheatsheet project visual">
+                <img id="img7" src="./resources/images/cheatsheet.bash.png" onmouseover="changeImg7()" onmouseout="changeImg8()" alt="cheatsheet project visual">
                 <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">A cheat sheet</a></h3>
                 <p>(for Bash commands)</p>
             </div>
@@ -98,6 +98,32 @@
 
      timeContainer.innerText = intlNumberFormatter.format(difference);
    }, 1000);
+
+   function changeImg1(){
+    document.getElementById("img1").src = "./resources/images/about_image.color.jpg";
+  };
+  function changeImg2(){
+    document.getElementById("img1").src = "./resources/images/about_image.jpg";
+  };
+
+  function changeImg3() {
+    document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.color.png";
+  };
+  function changeImg4() {
+    document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.png";
+  };
+  function changeImg5() {
+    document.getElementById("img5").src = "./resources/images/responsivewebsite.women.color.png";
+  };
+  function changeImg6() {
+    document.getElementById("img5").src = "./resources/images/responsivewebsite.women.png";
+  };
+  function changeImg7() {
+    document.getElementById("img7").src = "./resources/images/cheatsheet.bash.color.png";
+  };
+  function changeImg8() {
+    document.getElementById("img7").src = "./resources/images/cheatsheet.bash.png";
+  };
 </script>
 </body>
 </html>
