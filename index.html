@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Ubuntu:wght@700&family=Work+Sans&display=swap" rel="stylesheet">
     <title>Portfolio Heini-Maria Kotipelto</title>
 </head>
 <body>
-    <!-- header -section -->
-    <header>
+<!-- header -section -->
+    <header class="header">
         <nav>
-            <ul> 
+            <ul role="presentation"> 
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul> 
         </nav>
-        <h1>Hi, I'm Heini-Maria. I am a frontend developer.</h1>
-        <h2> ..with a marketing background.</h2>
-        <br>
-        <p>
-            Nerdy fact! I've been coding for
-            <span id="time-container">0</span> hours!
-          </p>
+        <div class="header-container">
+            <div class="header-hero">
+                <h1>Hi, I'm Heini-Maria.<br>I am a frontend developer.</h1>
+                <h2> ..with a marketing background.</h2>
+            </div>
+            <p>Nerdy fact! It'se been
+                <span id="time-container">0</span> hours since I started coding!
+            </p>
+        </div>
     </header>
    <main>
-    <!-- about me -section -->
-    <section>
+<!-- about me -section -->
+    <section class="about">
         <h2 id="about">About me</h2>
-        <div class="introduction">
-            <h3>Who am I?</h3>
-            <p>My name is Heini-Maria Kotipelto and I love creating things that live on the internet. My interest in web development started as a hobby when I decided to try and create a webpage for my blog— Although I was using a WordPress template and not coding the sites by myself it kindled the spark to want to learn more about how it is done from scratch. 
-            </p>   
-            <p>Fast-forward to today, and I've just finalized the course to become a Front-end Engineer. My next goal is to get to build accessible, inclusive products and digital experiences and work with real clients.
-            </p> 
-        </div>
-        <div>
-            <img src="./resources/images/about_image.jpg" alt="Heini-Maria Kotipelto">
-            <h3>Skills</h3>
-            <div >
+        <div class="about-me">
+            <div class="introduction">
+                <h3>Who am I?</h3>
+                <p>My name is Heini-Maria Kotipelto and I love creating things that live on the internet. My interest in web development started as a hobby when I decided to try and create a webpage for my blog— Although I was using a WordPress template and not coding the sites by myself it kindled the spark to want to learn more about how it is done from scratch. 
+                </p>   
+                <p>Fast-forward to today, and I've just finalized the course to become a Front-end Engineer. My next goal is to get to build accessible, inclusive products and digital experiences and work with real clients.
+                </p> 
+            </div>   
+            <div class="skills">
+                <img src="./resources/images/about_image.jpg" alt="Heini-Maria Kotipelto">
+                <div class="skills-container">
+                <h3>Skills</h3>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -49,24 +54,28 @@
                 </ul>
             </div>
         </div>
+    </div>
     </section>
-    <!-- projects -section -->
-    <section>
-        <h2 id="projects"> Projects</h2>
-        <p>Here are some examples of projects I've done so far</p>
-        <div>
+<!-- projects -section -->
+    <section class="projects">
+        <h2 id="projects">Projects</h2>
+        <p>Here are some examples of projects I've done so far:</p>
+        <div class="projects-container" role="presentation">
             <div>
                 <img src="./resources/images/websiteproject_dogfriendly.png" alt="website project visual">
-                <h3>A static website project for imaginary service</h3>
+                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">A static website</a></h3>
+                <p>(for imaginary service)</p>
 
             </div>
             <div>
                 <img src="./resources/images/responsivewebsite.women.png" alt="responsive website project visual">
-                <h3>A resposive website for an imaginary club</h3>
+                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">A resposive website</a></h3>
+                <p>(for imaginary club)</p>
             </div>
             <div>
                 <img src="./resources/images/cheatsheet.bash.png" alt="cheatsheet project visual">
-                <h3>A cheat sheet for Bash commands</h3>
+                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">A cheat sheet</a></h3>
+                <p>(for Bash commands)</p>
             </div>
         </div>
     </section>
@@ -75,5 +84,20 @@
    <footer>
     <p>Designed and built by Heini-Maria Kotipelto 2022</p>
    </footer>
+   <script>
+   const timeContainer = document.getElementById("time-container");
+   const start_date = "10-03-2022";
+   const start_day_date = new Date(start_date);
+   const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+   setInterval(() => {
+     const now = new Date();
+     const difference = Math.floor(
+       (now.getTime() - start_day_date.getTime()) / 1000 / 60 / 60
+     );
+
+     timeContainer.innerText = intlNumberFormatter.format(difference);
+   }, 1000);
+</script>
 </body>
 </html>

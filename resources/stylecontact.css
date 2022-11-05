@@ -1,0 +1,114 @@
+/* 
+style sheet order:
+ Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Section styles
+  4. header section 
+  5. main section 
+  6.Footer section
+
+======================================== */
+/* 1.Global styles*/
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+}
+html {
+    font-size: 18px;
+    color: whitesmoke ;
+}
+/* 2.Typography Styles */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+p {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    text-decoration: none;
+    color: whitesmoke;
+} 
+/*3.Section styles */
+.contact-page {
+    margin: 0px 0px;
+    background-image: url('./images/background_image.jpg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+main {
+    margin: 0 4.4rem 0 4.4rem;
+}
+/* 4. header section */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    right: 4.4rem;
+    padding-top: 1.4rem;
+    height: 4.4rem;
+}
+header li {
+    display: inline-block;
+    padding: 10px;   
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* 5. main section */
+main h1 {
+    padding-bottom: 1.6rem;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8rem;
+}
+.contact-container-a {
+    width: 22rem;
+    background-color: whitesmoke;
+    color: black;
+    padding: 2rem 1.6rem;
+}
+.contact-container-b {
+    width: 22rem;
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem 1.6rem;
+}
+.contact-container-a p, .contact-container-b p{
+    text-align: left;
+}
+/* 6.Footer section*/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+
+}
+footer p{
+    text-align: center;
+    font-size: 16px;
+}

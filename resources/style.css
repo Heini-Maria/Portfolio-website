@@ -1,0 +1,183 @@
+/* 
+style sheet order:
+ Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Section styles
+  4. Header section
+  5. About section
+  6. Projects section
+  7. Footer section
+======================================== */
+
+/* 1.Global styles*/
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+}
+html {
+    font-size: 18px;
+    color: whitesmoke ;
+
+}
+/* 2.Typography Styles */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+p {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+/* 3. Section styles */
+.about {
+    height: 38.9rem;
+    background-color: #0D1A21;
+    padding: 4.4rem;
+ }
+.projects  {
+    height: 38.9rem;
+    background-color: #0D1A21;
+    padding: 4.4rem 4.4rem 0 4.4rem;
+}
+
+/*4. Header section*/
+header {
+    background-image: url('./images/background_image.jpg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 38.9rem;
+  
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    right: 4.4rem;
+    padding-top: 2rem;
+}
+header li {
+    display: inline-block;
+    padding: 10px;   
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+header h2 {
+    text-align: left;
+}
+.header-container {
+    height: 30rem;
+    margin-left: 4.4rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.header-hero {
+    margin-top: auto;
+}
+.header p {
+    margin-top: auto;
+}
+/* 5. About section */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+.introduction {
+    width: 38.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+}    
+.introduction p {
+    padding-top: 1.5rem;
+}
+.skills {
+    width: 16.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1,5em;
+    position: relative;
+    top: 5rem;
+}
+.skills img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.8;
+    
+}
+.skills ul, .skills h3{
+    padding-top: 1.5rem;
+}
+
+/* 6. Projects section */
+.projects p {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.6rem 0.5rem;
+}
+.projects-container img {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 0.5rem;
+    padding-bottom: 1.5rem;
+    opacity: 0.8;
+}
+.projects-container .button{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 2px;
+}
+.projects-container .button:hover{
+    color:#090f35;
+}
+.projects-container .button:active{
+    margin-top: 5px;
+    background-color:hsla(232, 71, 12, 0.7);
+    border: 1px solid hsla(232, 71, 12, 0.7);
+    color: white;
+    box-shadow: 0px 0px;
+}
+.projects-container p{
+    font-size: 16px;
+}
+/* 7. Footer section  */
+footer {
+ background-color: #0D1A21;
+ color: whitesmoke;
+}
+footer p {
+    font-size: 16px;
+}
