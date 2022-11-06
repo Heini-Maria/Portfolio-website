@@ -1,9 +1,9 @@
 # Portfolio-website 
-## Description
+## Description 
 Portfolio website about my experience so far to share and showcase my skills.
-###Features
+## Features
 Responsive and interactive website.
-###Technologies
+## Technologies 
 +css
 +JavaScript
 +Sematic HTML
