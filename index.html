@@ -19,11 +19,14 @@
             </ul> 
         </nav>
         <div class="header-container">
-            <div class="header-hero">
+            <div class="header-desktop">
                 <h1>Hi, I'm Heini-Maria.<br>I am a frontend developer.</h1>
                 <h2> ..with a marketing background.</h2>
             </div>
-            <p class="nerdy-fact">Nerdy fact! It'se been
+            <div class="header-mobile">
+                <h1>Hi, I'm Heini-Maria.<br>I am a frontend developer.</h1>
+            </div>
+            <p>Nerdy fact! It'se been
                 <span id="time-container">0</span> hours since I started coding!
             </p>
         </div>
@@ -36,12 +39,15 @@
             <div class="introduction">
                 <h3>Who am I?</h3>
                 <p>My name is Heini-Maria Kotipelto and I love creating things that live on the internet. My interest in web development started as a hobby when I decided to try and create a webpage for my blog— Although I was using a WordPress template and not coding the sites by myself it kindled the spark to want to learn more about how it is done from scratch. 
-                </p>   
+                </p>
+                <br>   
                 <p>Fast-forward to today, and I've just finalized the course to become a Front-end Engineer. My next goal is to get to build accessible, inclusive products and digital experiences and work with real clients.
                 </p> 
             </div>   
             <div class="skills">
+                <div class="image-container">
                 <img id="img1" src="./resources/images/about_image.jpg" onmouseover="changeImg1()" onmouseout="changeImg2()"alt="Heini-Maria Kotipelto">
+                </div>
                 <div class="skills-container">
                 <h3>Skills</h3>
                 <ul>
@@ -61,21 +67,20 @@
         <h2 id="projects">Projects</h2>
         <p>Here are some examples of projects I've done so far:</p>
         <div class="projects-container" role="presentation">
-            <div>
+            <div class="container-item">
                 <img id="img3" src="./resources/images/websiteproject_dogfriendly.png"  onmouseover="changeImg3()" onmouseout="changeImg4()" alt= "website project visual">
-                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">A static website</a></h3>
-                <p>(for imaginary service)</p>
-
+                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">A static website</a></h3>
+                  <p>(for imaginary service)</p>
             </div>
-            <div>
+            <div class="container-item">
                 <img id="img5" src="./resources/images/responsivewebsite.women.png" onmouseover="changeImg5()" onmouseout="changeImg6()" alt="responsive website project visual">
-                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">A resposive website</a></h3>
-                <p>(for imaginary club)</p>
+                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">A resposive website</a></h3>
+                  <p>(for imaginary club)</p>
             </div>
-            <div>
+            <div class="container-item">
                 <img id="img7" src="./resources/images/cheatsheet.bash.png" onmouseover="changeImg7()" onmouseout="changeImg8()" alt="cheatsheet project visual">
-                <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">A cheat sheet</a></h3>
-                <p>(for Bash commands)</p>
+                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">A cheat sheet</a></h3>
+                  <p>(for Bash commands)</p>
             </div>
         </div>
     </section>

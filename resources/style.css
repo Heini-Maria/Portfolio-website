@@ -44,12 +44,12 @@ ul {
 }
 /* 3. Section styles */
 .about {
-    height: 38.9rem;
+    height: 100%;
     background-color: #0D1A21;
     padding: 4.4rem;
  }
 .projects  {
-    height: 38.9rem;
+    height: 100%;
     background-color: #0D1A21;
     padding: 4.4rem 4.4rem 0 4.4rem;
 }
@@ -60,7 +60,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 38.9rem;
+    height: 100%;
   
 }
 header nav {
@@ -70,7 +70,7 @@ header nav {
     width: 100%;
     position: relative;
     right: 4.4rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 header li {
     display: inline-block;
@@ -86,43 +86,63 @@ header h2 {
 .header-container {
     height: 30rem;
     margin-left: 4.4rem;
+    margin-right: 4.4rem;
     display: flex;
     align-content: center;
     flex-direction: column;
 }
-.header-hero {
+.header-desktop, .header-mobile{
     margin-top: auto;
+}
+.header-mobile{
+    display: none;
 }
 .header p {
     margin-top: auto;
 }
-.nerdy-fact {
-    background-color:hsla(0, 0%, 0%, 0.4);
+
+@media only screen and (max-width: 900px){
+    .header-desktop {
+    display: none;
+    }
+    .header-mobile {
+        display: block;
+        margin-top: 50%;
+    }
+    .header-container p {
+        display: none;
+    }
 }
+
 /* 5. About section */
 .about-me {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .introduction {
-    width: 38.9rem;
+    margin-top: 1.5rem;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 8rem;
-}    
-.introduction p {
-    padding-top: 1.5rem;
+    justify-content: center;
+
 }
+.introduction p {
+    margin-top: 1.5rem;
+}  
 .skills {
-    width: 16.6rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    line-height: 1,5em;
-    position: relative;
-    top: 5rem;
+    justify-content: center;
+}
+.image-container {
+    padding-top: 1.5rem;
+    align-self: center;
+}
+.skills-container {
+    text-align: center;
 }
 .skills img {
     width: 150px;
@@ -132,10 +152,26 @@ header h2 {
     
 }
 .skills ul, .skills h3{
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 730px) {
+    .about-me {
+        display: block;
+        justify-content: center;
+    }
+    .introduction {
+        display: block;
+        width: 100%;
+    }
+    .skills {
+        width: 100%;
+    }
 }
 
 /* 6. Projects section */
+
 .projects p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -144,6 +180,12 @@ header h2 {
     display: flex;
     justify-content: space-around;
     padding: 1.6rem 0.5rem;
+}
+.container-item {
+    align-self: center;
+}
+.container-item h3, .container-item p{
+    align-self: center;
 }
 .projects-container img {
     max-height: 200px;
@@ -162,6 +204,7 @@ header h2 {
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0px 2px;
+    align-self: center;
 }
 .button:hover {
     color:#1a4359;
@@ -175,6 +218,28 @@ header h2 {
 }
 .projects-container p{
     font-size: 16px;
+}
+@media only screen and (max-width: 835px) {
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container-item {
+        display: block;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .projects-container img {
+        max-width: 200px;
+        max-height: 150px;
+    }
+    .button {
+        font-size: 16px;
+    }
 }
 /* 7. Footer section  */
 footer {
