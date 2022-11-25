@@ -63,68 +63,42 @@
     <section class="projects">
         <h2 id="projects">Projects</h2>
         <p>Here are some examples of projects I've done so far:</p>
+        <button class="pre-btn"><img src="./resources/images/button-prev.png" alt="arrow to the left"></button>
+        <button class="nxt-btn"><img src="./resources/images/button-nxt.png" alt="arrow to the right"></button>
         <div class="projects-container" role="presentation">
-            <div class="container-item">
-                <img id="img3" src="./resources/images/websiteproject_dogfriendly.png"  onmouseover="changeImg3()" onmouseout="changeImg4()" alt= "website project visual">
-                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">A static website</a></h3>
-                  <p>(for imaginary service)</p>
+          <div class="projects-card">
+            <div class="project-image">
+              <img id="img3" class="project-thumb" src="./resources/images/websiteproject_dogfriendly.png"  onmouseover="changeImg3()" onmouseout="changeImg4()" alt= "website project visual">
             </div>
-            <div class="container-item">
-                <img id="img5" src="./resources/images/responsivewebsite.women.png" onmouseover="changeImg5()" onmouseout="changeImg6()" alt="responsive website project visual">
-                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">A resposive website</a></h3>
-                  <p>(for imaginary club)</p>
+            <div class="project-info">
+              <button class="project-button"><a href='C:\Users\Omistaja\Documents\oma\Coding\projects\Website project\index.html' target="_blank" title="link for the static website project">Static website</a></button>
+              <p>(for imaginary service)</p>
             </div>
-            <div class="container-item">
-                <img id="img7" src="./resources/images/cheatsheet.bash.png" onmouseover="changeImg7()" onmouseout="changeImg8()" alt="cheatsheet project visual">
-                  <h3><a class="button" href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">A cheat sheet</a></h3>
-                  <p>(for Bash commands)</p>
+          </div>
+          <div class="projects-card">
+            <div class="project-image">
+              <img id="img5" class="project-thumb"src="./resources/images/responsivewebsite.women.png" onmouseover="changeImg5()" onmouseout="changeImg6()" alt="responsive website project visual">
             </div>
+            <div class="project-info">
+              <button class="project-button"><a href='C:\Users\Omistaja\Documents\oma\Coding\projects\resposive club site\index.html'target="_blank" title="link for the responsive website project">Resposive website</a></button>
+              <p>(for imaginary club)</p>
+            </div>
+          </div>
+          <div class="projects-card">
+            <div class="project-image">
+              <img id="img7" class="project-thumb" src="./resources/images/cheatsheet.bash.png" onmouseover="changeImg7()" onmouseout="changeImg8()" alt="cheatsheet project visual">
+            </div>
+            <div class="project-info">
+              <button class="project-button"><a href='C:\Users\Omistaja\Documents\oma\Coding\projects\cheatsheet\index.html'target="_blank" title="link for the cheat sheet project">Cheat sheet</a></button>
+              <p>(for Bash commands)</p>
+            </div>
+          </div>
         </div>
     </section>
    </main>
    <footer>
     <p>Designed and built by Heini-Maria Kotipelto 2022</p>
    </footer>
-   <script>
-   const timeContainer = document.getElementById("time-container");
-   const start_date = "10-03-2022";
-   const start_day_date = new Date(start_date);
-   const intlNumberFormatter = new Intl.NumberFormat("en-US");
-
-   setInterval(() => {
-     const now = new Date();
-     const difference = Math.floor(
-       (now.getTime() - start_day_date.getTime()) / 1000 / 60 / 60
-     );
-
-     timeContainer.innerText = intlNumberFormatter.format(difference);
-   }, 1000);
-
-   function changeImg1(){
-    document.getElementById("img1").src = "./resources/images/about_image.color.jpg";
-  };
-  function changeImg2(){
-    document.getElementById("img1").src = "./resources/images/about_image.jpg";
-  };
-
-  function changeImg3() {
-    document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.color.png";
-  };
-  function changeImg4() {
-    document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.png";
-  };
-  function changeImg5() {
-    document.getElementById("img5").src = "./resources/images/responsivewebsite.women.color.png";
-  };
-  function changeImg6() {
-    document.getElementById("img5").src = "./resources/images/responsivewebsite.women.png";
-  };
-  function changeImg7() {
-    document.getElementById("img7").src = "./resources/images/cheatsheet.bash.color.png";
-  };
-  function changeImg8() {
-    document.getElementById("img7").src = "./resources/images/cheatsheet.bash.png";
-  };
-</script>
+  <script src="./script.js"></script>
 </body>
 </html>
