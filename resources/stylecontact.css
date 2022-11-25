@@ -1,15 +1,4 @@
-/* 
-style sheet order:
- Site Stylesheet
-  1. Global Styles
-  2. Typography Styles
-  3. Section styles
-  4. header section 
-  5. main section 
-  6.Footer section
 
-======================================== */
-/* 1.Global styles*/
 *{
     box-sizing: border-box;
     margin: 0px 0px;
@@ -23,7 +12,6 @@ html {
     background-position: center;
     background-size: cover;
 }
-/* 2.Typography Styles */
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
@@ -50,14 +38,12 @@ li {
     text-decoration: none;
     color: whitesmoke;
 } 
-/*3.Section styles */
 .contact-page {
     margin: 0px 0px;
 }
 main {
     margin: 0 4.4rem 0 4.4rem;
 }
-/* 4. header section */
 header nav {
     display: flex;
     align-items: center;
@@ -83,7 +69,6 @@ header a{
         right: 0;
     }
 }
-/* 5. main section */
 main h1 {
     padding-bottom: 1.6rem;
 }
@@ -153,7 +138,6 @@ main h1 {
         font-size: 14px;
     }
 }
-/* 6.Footer section*/
 footer {
     padding-top: 5rem;
 }

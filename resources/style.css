@@ -1,16 +1,4 @@
-/* 
-style sheet order:
- Site Stylesheet
-  1. Global Styles
-  2. Typography Styles
-  3. Section styles
-  4. Header section
-  5. About section
-  6. Projects section
-  7. Footer section
-======================================== */
 
-/* 1.Global styles*/
 *{
     box-sizing: border-box;
     margin: 0px 0px;
@@ -20,7 +8,6 @@ html {
     color: whitesmoke ;
 
 }
-/* 2.Typography Styles */
 h1 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
@@ -42,7 +29,7 @@ p {
 ul {
     list-style: none;
 }
-/* 3. Section styles */
+
 .about {
     height: 100%;
     background-color: #0D1A21;
@@ -54,7 +41,6 @@ ul {
     padding: 4.4rem 4.4rem 0 4.4rem;
 }
 
-/*4. Header section*/
 header {
     background-image: url('./images/background_image.jpg.jpg');
     background-repeat: no-repeat;
@@ -114,7 +100,6 @@ header h2 {
     }
 }
 
-/* 5. About section */
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +155,6 @@ header h2 {
     }
 }
 
-/* 6. Projects section */
 
 .projects p {
     padding-top: 1.5rem;
