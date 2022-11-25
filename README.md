@@ -8,3 +8,5 @@ Responsive and interactive website.
 +JavaScript
 +Sematic HTML
 +ARIA
+
+check the preview:  https://heini-maria.github.io/Portfolio-website/
