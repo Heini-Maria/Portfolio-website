@@ -204,6 +204,9 @@ a{
     padding-top: 20px;
     align-items: center;
 }
+.project-buttons {
+    display: flex;
+}
 .pre-btn, 
 .nxt-btn {
     border: none;
@@ -233,7 +236,7 @@ a{
     border: none;
 }
 
-.project-button {
+.project-button, .icon{
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -242,12 +245,20 @@ a{
     background-color:#0D1A21;
     border: 2px solid white;
     border-radius: 5px;
-    align-self: center;
+    align-self: center;  
 }
-.project-button:hover {
+.icon {
+    margin-left: 3rem;
+}
+.project-button:hover,
+.icon:hover {
     border: 3px solid white;
 }
-.project-button:active {
+.icon img {
+    width: .9rem;
+}
+.project-button:active,
+.icon:active {
     color:#0D1A21;
     background-color: white;
 }
