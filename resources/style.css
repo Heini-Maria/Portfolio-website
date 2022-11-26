@@ -6,7 +6,7 @@
 html {
     font-size: 18px;
     color: whitesmoke ;
-
+    scroll-behavior: smooth;
 }
 h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -33,43 +33,32 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
-
-.about {
-    height: 100%;
-    background-color: #0D1A21;
-    padding: 4.4rem;
- }
-.projects  {
-    height: 100%;
-    background-color: #0D1A21;
-    padding: 4.4rem 4.4rem 0 4.4rem;
-}
-
-header {
+.header {
     background-image: url('./images/background_image.jpg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
   
 }
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    position: relative;
-    right: 4.4rem;
-    padding-top: 1rem;
-}
-header li {
-    display: inline-block;
-    padding: 10px;   
-}
-header h2 {
-    text-align: left;
-}
-.header-container {
+    .header nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        position: relative;
+        right: 4.4rem;
+        padding-top: 1rem;
+    }
+    .header li {
+        display: inline-block;
+        padding: 10px;   
+    }
+    .header-container h2 {
+        text-align: left;
+    }
+.header-container,
+.contact-container {
     height: 30rem;
     margin-left: 4.4rem;
     margin-right: 4.4rem;
@@ -77,15 +66,16 @@ header h2 {
     align-content: center;
     flex-direction: column;
 }
-.header-desktop, .header-mobile{
+.header-desktop, 
+.header-mobile{
     margin-top: auto;
 }
 .header-mobile{
     display: none;
 }
-.header p {
-    margin-top: auto;
-}
+    .header p {
+        margin-top: auto;
+    }
 
 @media only screen and (max-width: 900px){
     .header-desktop {
@@ -99,47 +89,62 @@ header h2 {
         display: none;
     }
 }
-
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.about, 
+.projects  {
+    height: 100vh;
+    background-color: #0D1A21;
+    padding-top: 2rem;
 }
-.introduction {
-    margin-top: 1.5rem;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about {
+    margin-top 2rem;
 
 }
-.introduction p {
-    margin-top: 1.5rem;
-}  
+
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+    }
+    .introduction {
+        margin-top: 1.5rem;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introduction p {
+        margin-top: 1.5rem;
+    }
+    .projects h2,
+    .about h2 {
+        text-transform: uppercase;
+    }
+   
 .skills {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.image-container {
-    padding-top: 1.5rem;
-    align-self: center;
-}
-.skills-container {
-    text-align: center;
-}
-.skills img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    opacity: 0.8;
-    
-}
-.skills ul, .skills h3{
-    margin-top: 1.5rem;
-    padding-left: 0;
-}
+    .skills-container {
+        text-align: center;
+    }
+    .skills img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        opacity: 0.8;    
+    }
+    .skills ul, .skills h3{
+        margin-top: 1.5rem;
+        padding-left: 0;
+    }
+    .image-container {
+        padding-top: 1.5rem;
+        align-self: center;
+    }
 
 @media only screen and (max-width: 730px) {
     .about-me {
@@ -157,12 +162,12 @@ header h2 {
 .projects {
     position: relative;
     overflow: hidden;
-    padding: 20px;
+    padding-top: 2rem;
 }
-.projects p {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
+    .projects p {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 .projects-container {
     padding: 0 100px;
     display: flex;
@@ -171,21 +176,21 @@ header h2 {
     scroll-behavior: smooth;
     margin: 0px auto;
 }
-.projects-container::-webkit-scrollbar {
-    display: none;
-}
+    .projects-container::-webkit-scrollbar {
+        display: none;
+    }
 .projects-card {
     flex: 0 0 auto;
     width: 600px;
     height: 450px;
     margin-right: 200px;
 }
-.project-image {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
+    .project-image {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
 .project-thumb {
     width: 100%;
     height: 100%;
@@ -199,7 +204,8 @@ header h2 {
     padding-top: 20px;
     align-items: center;
 }
-.pre-btn, .nxt-btn {
+.pre-btn, 
+.nxt-btn {
     border: none;
     width: 100px;
     height: 100%;
@@ -270,9 +276,87 @@ header h2 {
         font-size: 16px;
     }
 }
+.contact-main h1 {
+    text-align: center;
+    padding: 3rem;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+.contact-container-a {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    background-color: whitesmoke;
+    color: black;
+    padding: 2rem 1.6rem;
+}
+.contact-container-b {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem 1.6rem;
+}
+.contact-container-a p, 
+.contact-container-b p{
+    text-align: left;
+}
+@media only screen and (max-width: 1240px){
+    .contact {
+        flex-direction: column;
+        padding-top: 4rem;
+        align-items: center;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .contact {
+        flex-direction: column;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        display: block;
+    }
+}
+@media only screen and (max-width: 430px) {
+    main h1 {
+        padding-top: 2rem;
+        margin: 0px;
+        text-align: center;
+    }
+    .contact {
+        padding-top: 5rem;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        display: block;
+        width: 12rem;
+        padding: 1rem 0.5rem;
+    } 
+    .contact-container-a h2, 
+    .contact-container-b h2{
+        font-size: 18px;
+    }
+    .contact-container-a p, 
+    .contact-container-b p {
+        font-size: 14px;
+    }
+}
 footer {
  background-color: #0D1A21;
  color: whitesmoke;
+ position: relative;
+ bottom: 0;
 }
 footer p {
     font-size: 16px;
