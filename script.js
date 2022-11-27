@@ -20,22 +20,22 @@ function changeImg2(){
 };
 
 function changeImg3() {
- document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.color.png";
+ document.getElementById("img3").src = "./resources/images/websiteproject_brainnest.color.png";
 };
 function changeImg4() {
- document.getElementById("img3").src = "./resources/images/websiteproject_dogfriendly.png";
+ document.getElementById("img3").src = "./resources/images/websiteproject_brainnest.png";
 };
 function changeImg5() {
- document.getElementById("img5").src = "./resources/images/responsivewebsite.women.color.png";
+ document.getElementById("img5").src = "./resources/images/websiteproject_dogfriendly.color.png";
 };
 function changeImg6() {
- document.getElementById("img5").src = "./resources/images/responsivewebsite.women.png";
+ document.getElementById("img5").src = "./resources/images/websiteproject_dogfriendly.png";
 };
 function changeImg7() {
- document.getElementById("img7").src = "./resources/images/cheatsheet.bash.color.png";
+ document.getElementById("img7").src = "./resources/images/reactapp.adopt-a-pet.color.png";
 };
 function changeImg8() {
- document.getElementById("img7").src = "./resources/images/cheatsheet.bash.png";
+ document.getElementById("img7").src = "./resources/images/reactapp.adopt-a-pet..png";
 };
 
 const projectContainers= [...document.querySelectorAll('.projects-container')];
