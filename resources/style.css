@@ -118,6 +118,9 @@ a{
     padding-top: 2rem;
     flex-wrap: wrap;
 }
+.about {
+    padding: 2em;
+}
     .about-me {
         display: flex;
         height: 100%;
@@ -127,7 +130,7 @@ a{
     }
     .introduction {
         margin-top: 1.5rem;
-        width: 60%;
+        width: 50%;
         display: flex;
         flex: 2 2 auto;
         flex-direction: column;

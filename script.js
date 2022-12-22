@@ -32,11 +32,17 @@ function changeImg6() {
  document.getElementById("img5").src = "./resources/images/websiteproject_dogfriendly.png";
 };
 function changeImg7() {
- document.getElementById("img7").src = "./resources/images/reactapp.adopt-a-pet.color.png";
+ document.getElementById("img7").src = "./resources/images/calculator.color.png";
 };
 function changeImg8() {
- document.getElementById("img7").src = "./resources/images/reactapp.adopt-a-pet..png";
+ document.getElementById("img7").src = "./resources/images/calculator.png";
 };
+function changeImg9() {
+  document.getElementById("img8").src = "./resources/images/Diddit.color.png";
+ };
+ function changeImg10() {
+  document.getElementById("img8").src = "./resources/images/Diddit.png";
+ };
 
 const projectContainers= [...document.querySelectorAll('.projects-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
