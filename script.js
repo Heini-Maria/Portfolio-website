@@ -43,6 +43,13 @@ function changeImg9() {
  function changeImg10() {
   document.getElementById("img8").src = "./resources/images/Diddit.png";
  };
+ function changeImg11() {
+  document.getElementById("img9").src = "./resources/images/repeat.color.png";
+ };
+ function changeImg12() {
+  document.getElementById("img9").src = "./resources/images/repeat.png";
+ };
+
 
 const projectContainers= [...document.querySelectorAll('.projects-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
