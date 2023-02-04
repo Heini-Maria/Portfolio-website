@@ -44,7 +44,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -89,53 +89,6 @@ a{
     position: relative;
     top: 20vh;
 }
-@media only screen and (max-width: 1000px) {
-    .header {
-        height: 50vh;
-    }
-    .header-container {
-        margin-top: 2rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2, a {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        display: none;
-    }
-    
-    .header p {
-        position: static;
-        margin-top: 2rem;
-        font-size: 1rem;
-    }
-}
-@media only screen and (max-width: 610px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .header nav {
-        right: 0.5rem;
-    }
-    .header-desktop {
-        display: none;
-    }
-    .header-container,
-    .contact-container {
-        height: 10vh;
-    }
-    .header-mobile {
-        display: block;
-        margin-top: 1rem;
-        height: 100%;
-    }
-    .header-container p {
-        display: none;
-    }
-}
 
 .projects h2,
 .about h2 {
@@ -143,7 +96,7 @@ a{
 }
 .about, 
 .projects  {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #0D1A21;
     padding-top: 2rem;
     flex-wrap: wrap;
@@ -200,53 +153,6 @@ a{
         padding-top: 1.5rem;
         align-self: center;
     }
-@media only screen and (max-width: 1000px) {
-  .introduction {
-    padding: 0 1rem;
-    margin-top: 0.5rem
-  }
-  .skills-container {
-    margin: 0;
-  }  
-  .skills ul,
-  .skills h3 {
-    margin-top: 0.5rem;
-  }
-  .image-container {
-    padding-top: 0.5rem;
-  }
-
-}
-@media only screen and (max-width: 770px) {
-    .skills {
-        display: none;
-    }
-    .skills-mobile {
-        display: block;
-    }
-}
-@media only screen and (max-width: 670px){
-    .introduction {
-        padding: 0 0.5rem;
-    }
-    .about-me {
-        padding-bottom: 1rem;
-    }
-    .projects h2,
-    .about h2 {
-        font-size: 2rem;
-    }
-    .introduction p {
-        margin-top: 0.5rem;
-        font-size: 1.4rem;
-    }
-    .introduction-desktop {
-        display: none;
-    }
-    .introduction-mobile {
-        display: block;
-    }
-}
 
 .projects {
     position: relative;
@@ -369,6 +275,66 @@ button.icon  {
 .projects-container p{
     font-size: 1.5rem;
 }
+
+.contact-main {
+    min-height: 70vh;
+}
+
+.contact-main h1 {
+    text-align: center;
+    padding: 3rem;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    min-height: 50vh;
+}
+
+.contact-mobile {
+    display:none;
+}
+.contact-container-a {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: whitesmoke;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    color: black;
+    padding: 2rem 1.6rem;
+}
+.contact-container-b {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    width: 40%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem 1.6rem;
+}
+
+footer {
+ background-color: #0D1A21;
+ color: whitesmoke;
+ padding: 2rem;
+}
+footer p {
+    font-size: 0.8rem;
+}
+@media only screen and (max-width: 1240px){
+    .contact {
+        flex-direction: column;
+        padding-top: 4rem;
+        align-items: center;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        flex-direction: column;
+        width: 60%;
+    }
+}
 @media only screen and (max-width: 1085px) {
     .pre-btn, 
     .nxt-btn  {
@@ -378,7 +344,62 @@ button.icon  {
     .projects-container p {
         font-size: 1rem;
     }
+}
+@media only screen and (max-width: 1000px) {
+    .header {
+       min-height: 70vh;
+    }
+    .header-container {
+        margin-top: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2, a {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size:1rem;
+    }
 
+    h3 {
+        display: none;
+    }
+    .introduction {
+        padding: 0 1rem;
+        margin-top: 0.5rem
+      }
+      .skills-container {
+        margin: 0;
+      }  
+      .skills ul,
+      .skills h3 {
+        margin-top: 0.5rem;
+      }
+      .image-container {
+        padding-top: 0.5rem;
+      }
+    
+    }
+
+@media only screen and (max-width: 900px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+    }
+    main.contact-main {
+        display: block;
+        width: 100%;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        padding: 1.5rem;
+    }
+
+    .contact-container-a p, 
+    .contact-container-b p{
+    font-size: 16px;
+}
 }
 @media only screen and (max-width: 830px) {
     .projects-container {
@@ -404,12 +425,86 @@ button.icon  {
         padding: 0;
     }
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 770px) {
+    .skills {
+        display: none;
+    }
+    .skills-mobile {
+        display: block;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 685px) {
+    .introduction {
+        padding: 0 0.5rem;
+    }
+    .about-me {
+        padding-bottom: 1rem;
+    }
+    .projects h2,
+    .about h2 {
+        font-size: 2rem;
+    }
+    .introduction p {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+    .introduction-desktop {
+        display: none;
+    }
+    .introduction-mobile {
+        display: block;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .header nav {
+        right: 0.5rem;
+    }
+    .header-desktop {
+        display: none;
+    }
+    .header-container,
+    .contact-container {
+        min-height: 10vh;
+    }
+    .header-mobile {
+        display: block;
+        margin-top: 1rem;
+        height: 100%;
+    }
+    .header-container p {
+        display: none;
+    }
     .projects-container {
         width: 25rem;
     }
-
+    .contact-main h1 {
+        padding: 2rem;
+    }
+    
+    section.contact {
+        padding: 1rem;
+        height: 50vh;
+    }
+    .contact-container-a, 
+    .contact-container-b {
+        width: 80%;
+        min-height: 30%;
+        justify-content: flex-end;
+    }
+    .contact-container-a p, 
+    .contact-container-b p {
+        margin-top: 0;
+    }
+    .header-contact a {
+        font-size: 1rem;
+    }    
 }
+
 @media only screen and (max-width: 600px) {
     section.projects p {
         display: none;
@@ -472,112 +567,11 @@ button.icon  {
         display: none;
      }
 }
-.contact-main {
-    height: 70vh;
-}
-
-.contact-main h1 {
-    text-align: center;
-    padding: 3rem;
-}
-.contact {
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-    height: 50vh;
-}
-
-.contact-mobile {
-    display:none;
-}
-.contact-container-a {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    background-color: whitesmoke;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    color: black;
-    padding: 2rem 1.6rem;
-}
-.contact-container-b {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: flex-start;
-    width: 40%;
-    background-color: black;
-    color: whitesmoke;
-    padding: 2rem 1.6rem;
-}
-
-@media only screen and (max-width: 1240px){
-    .contact {
-        flex-direction: column;
-        padding-top: 4rem;
-        align-items: center;
-    }
-    .contact-container-a, 
-    .contact-container-b {
-        flex-direction: column;
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-    .contact-page {
-        display: flex;
-        flex-direction: column;
-    }
-    main.contact-main {
-        display: block;
-        width: 100%;
-    }
-    .contact-container-a, 
-    .contact-container-b {
-        padding: 1.5rem;
-    }
-
-    .contact-container-a p, 
-    .contact-container-b p{
-    font-size: 16px;
-}
-}
-@media only screen and (max-width: 750px) {
-    .contact-container-a, 
-    .contact-container-b {
-        width: 70%;
-    }
-}
-@media only screen and (max-width: 685px) {
-    .contact-main h1 {
-        padding: 2rem;
-    }
-    
-    section.contact {
-        padding: 1rem;
-        height: 50vh;
-    }
-    .contact-container-a, 
-    .contact-container-b {
-        width: 80%;
-        height: 30%;
-        justify-content: flex-end;
-    }
-    .contact-container-a p, 
-    .contact-container-b p {
-        margin-top: 0;
-    }
-    .header-contact a {
-        font-size: 1rem;
-    }    
-}
 @media only screen and (max-width: 300px) {
     .contact-container-a, 
     .contact-container-b {
        width:100%;
-       height: 20%;
+       min-height: 20%;
   
     }
     
@@ -587,13 +581,4 @@ button.icon  {
   
     }
     
-}
-
-footer {
- background-color: #0D1A21;
- color: whitesmoke;
- padding: 2rem;
-}
-footer p {
-    font-size: 0.8rem;
 }
